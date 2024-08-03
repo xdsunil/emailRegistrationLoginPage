@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Register</title>
+</head>
+<body>
+    <h2>Register</h2>
+    <form action="/register" method="post">
+        <div>
+            <label>First Name:</label>
+            <input type="text" name="firstName" required>
+        </div>
+        <div>
+            <label>Last Name:</label>
+            <input type="text" name="lastName" required>
+        </div>
+        <div>
+            <label>Email:</label>
+            <input type="email" name="email" required>
+        </div>
+        <div>
+            <label>Password:</label>
+            <input type="password" name="password" required>
+        </div>
+        <div>
+            <button type="submit">Register</button>
+        </div>
+    </form>
+    <p th:text="${message}"></p>
+</body>
+</html>
